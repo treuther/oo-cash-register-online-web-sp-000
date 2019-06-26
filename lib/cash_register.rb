@@ -26,6 +26,7 @@ def apply_discount
   else
     "There is no discount to apply."
   end
+  @total_items
 end
 
 end
