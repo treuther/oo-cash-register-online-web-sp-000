@@ -21,6 +21,7 @@ end
 def apply_discount
   if @discount > 0
     savings = (@total*discount)/100
+    @total -= savings
     @total
   end
 end
