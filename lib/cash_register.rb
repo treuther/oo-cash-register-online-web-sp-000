@@ -20,7 +20,8 @@ end
 
 def apply_discount
   if @discount > 0
-    (@total*100).round/100
+    (@total*100).round/100.0
+    @total
 end
 
 end
