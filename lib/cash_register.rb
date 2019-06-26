@@ -23,6 +23,8 @@ def apply_discount
     savings = (@total*discount)/100
     @total -= savings
     "After the discount, the total comes to $#{total}."
+  else
+    "There is no discount to apply."
   end
 end
 
