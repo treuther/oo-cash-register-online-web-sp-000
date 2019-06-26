@@ -9,6 +9,7 @@ def initialize(discount = 0)
 end
 
 def add_item(item, price, quantity = 1)
+  @last_transaction = item
   @price = price
   @total += price * quantity
   counter = 0
@@ -33,7 +34,8 @@ def items
 end
 
 def void_last_transaction
-  @last_transaction = last_transaction
+  @last_transaction = item
+  @total_items - item
   
 end
 
