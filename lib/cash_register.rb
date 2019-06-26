@@ -34,7 +34,7 @@ end
 
 def void_last_transaction
   @total -= add_item
-  @items
+  @total
 end
 
 end
