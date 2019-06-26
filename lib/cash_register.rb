@@ -34,6 +34,7 @@ end
 
 def void_last_transaction
   self -= add_item
+  self
 end
 
 end
